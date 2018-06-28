@@ -6,15 +6,28 @@ body {
 }
 
 .top {
-    display: flex;
+    display: block;
     position: relative;
     background-color: #505050;
     padding: 0;
     margin: 0;
 }
+header{
+    background-color: #fff;
+    position: relative;
+}
 
-/* (min-width:1920px) */
+main {
+    /* position: absolute; */
+    padding: 0;
+    margin: 0;
+}
+
 @media screen and (min-width:1920px) { 
+
+    header {
+        
+    }
 
     .top{
     height: 900px;
@@ -220,10 +233,36 @@ body {
         width: 242px;
     }
 
-    .target {
+    main{
+        position: relative;
+        display: block;
         background-image: url(../img/bghd.jpg);
+        top: 407px;
+    }
+    .target {
+        width: 100%;
+        display: block;
+        background-image: url(../img/bghd.jpg) no-repeat center center;
         height: 1280px;
     }
+    .conditions {
+        height: 720px;
+        width: 100%;
+        background-color: #000000;
+        color: #fff;
+    }
+    .request {
+        height: 980px;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    footer {
+        position: relative;
+        top: 980px;
+        height: 392px;
+        width: 100%;
+        background-color: #000;
+        margin-bottom: 0;
 }
 
 @font-face {
