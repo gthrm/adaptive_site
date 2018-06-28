@@ -219,6 +219,11 @@ body {
         top: 135px;
         width: 242px;
     }
+
+    .target {
+        background-image: url(../img/bghd.jpg);
+        height: 1280px;
+    }
 }
 
 @font-face {
