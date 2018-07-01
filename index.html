@@ -143,7 +143,7 @@
                     <p id="rname">открыть свой ресторан</p>
                 </div>
                 <div class="reqform">
-                    <div class="texinput">
+                    <form method="POST" class="texinput">
                         <div id="kolonka1">
                             <input type="text" class="inputText" name="username" id="username" placeholder="Ф. И. О.">
                             <input type="email" class="inputText" name="email" id="email" placeholder="Электронная почта">
@@ -161,10 +161,10 @@
                                 <div class="g-recaptcha" data-sitekey="6LfPnGEUAAAAAI_7c9o9MpXID4aNvsu4tEsP6UW0"></div>
                             </div>
                             <div class="send">
-                                <input id="send" type="button" value="Отправить заявку">
+                                <input id="send" type="submit" value="Отправить заявку" name="sub_but">
                                 <h1 id="rules">Нажимая кнопку “Отправить заявку”, вы даёте согласие на обработку своих персональных данных</h1>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

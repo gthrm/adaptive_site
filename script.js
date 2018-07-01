@@ -51,32 +51,34 @@ send.onclick = function send() {
         alert('Заполните все поля!');
     } else {
         let captcha = grecaptcha.getResponse();
-        if (!captcha.length) {
+        if (captcha.length == "") {
             alert('Пройдите капчу!');
+            
         } else {
-            console.log(captcha);
+            console.log(username.id + ": " + username.value);
+            console.log(email.id + ": " + email.value);
+            console.log(tel.id + ": " + tel.value);
+            console.log(city.id + ": " + city.value);
+            console.log(message.id + ": " + message.value);
+            var newWin = window.open("about:blank", "data", "width=200,height=200");
+            newWin.document.write("Данные отправлены в Консоль!");
+            setTimeout(function() {
+                newWin.close();
+                username.value = "";
+                username.setAttribute("style", "");
+                email.value = "";
+                email .setAttribute("style", "");
+                tel.value = "";
+                tel.setAttribute("style", "");
+                city.value = "";
+                city.setAttribute("style", "");
+                message.value = "";
+                message.setAttribute("style", "");
+            }, 3000);
+                console.log(captcha);
         };
 
-        console.log(username.id + ": " + username.value);
-        console.log(email.id + ": " + email.value);
-        console.log(tel.id + ": " + tel.value);
-        console.log(city.id + ": " + city.value);
-        console.log(message.id + ": " + message.value);
-        var newWin = window.open("about:blank", "data", "width=200,height=200");
-        newWin.document.write("Данные отправлены в Консоль!");
-        setTimeout(function() {
-            newWin.close();
-            username.value = "";
-            username.setAttribute("style", "");
-            email.value = "";
-            email .setAttribute("style", "");
-            tel.value = "";
-            tel.setAttribute("style", "");
-            city.value = "";
-            city.setAttribute("style", "");
-            message.value = "";
-            message.setAttribute("style", "");
-        }, 3000);
+        
     };
      
     
