@@ -50,13 +50,20 @@ send.onclick = function send() {
     if (username.value === "" || email.value === "" || tel.value === "" || city.value === "" || message.value === "") {  
         alert('Заполните все поля!');
     } else {
+        let captcha = grecaptcha.getResponse();
+        if (!captcha.length) {
+            alert('Пройдите капчу!');
+        } else {
+            console.log(captcha);
+        };
+
         console.log(username.id + ": " + username.value);
         console.log(email.id + ": " + email.value);
         console.log(tel.id + ": " + tel.value);
         console.log(city.id + ": " + city.value);
         console.log(message.id + ": " + message.value);
         var newWin = window.open("about:blank", "data", "width=200,height=200");
-        newWin.document.write("Данные отправлены!");
+        newWin.document.write("Данные отправлены в Консоль!");
         setTimeout(function() {
             newWin.close();
             username.value = "";
