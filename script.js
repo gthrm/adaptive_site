@@ -77,7 +77,6 @@ send.onclick = function send() {
                 message.value = "";
                 message.setAttribute("style", "");
             }, 3000);
-                console.log(captcha);
         };
 
         
