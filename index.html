@@ -6,9 +6,10 @@
     <title>Франшиза</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
-    
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/menu.css" />
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <div class="wrapper">
@@ -16,24 +17,25 @@
             <div class="top">
                 <div class="menu">
                     <div class="burger">
-                        <input type="checkbox" id="check-menu">
                         <label for="check-menu"></label>
+                        <input type="checkbox" id="check-menu">
                         <div class="burgerline first"></div>
                         <div class="burgerline second"></div>
                         <div class="burgerline third"></div>
-                        <div class="burgerline fourth"></div>
                         <nav class="main-menu">
-                            <a href="#">Пункт 1</a>
-                            <a href="#">Пункт 2</a>
-                            <a href="#">Пункт 3</a>
-                            <a href="#">Пункт 4</a>
-                            <a href="#">Пункт 5</a>
+                            <a id="menu" href="#">Рестораны</a>
+                            <a id="menu" href="#">Что в меню</a>
+                            <a id="menu" href="#">Акции и события</a>
+                            <a id="menu" href="#">О нас</a>
+                            <a id="menu" href="#">Франшиза</a>
+                            <a id="menu" href="#">Контакты</a>
                         </nav>
                     </div>
-                    <div class="name">
-                        <p id="name">Франшиза</p>
+                    <div class="namesite">
+                        <p id="namesite">Франшиза</p>
                     </div>
                 </div>
+                
                 <div class="texttop">
                     <div class="nametop">
                         <p id="nametop">откройте свой ресторан</p>
@@ -41,42 +43,141 @@
                     <p id="texttop">Диониссийское начало, по определению, вызывает самодостаточный эдипов комплекс. Добавлю, что филогенез продолжает персональный эдипов комплекс, что-то подобное можно встретить в работах Ауэрбаха и Тандлера. Этикет, как бы это ни казалось парадоксальным, традиционен.</p>
                 </div>
             </div>
-            <div class="bottom">
-                <div id="forms">
+        </header>
+
+        <!-- Контент -->
+        <main class="main1">
+
+            <!-- Инфа с красными цифрами -->
+
+            <div class="mtop">
+                <div id="form1">
                     <p id="first">2014</p>
                     <p id="dots">........................</p>
                     <p id="last">год основания компании</p>
                 </div>
 
-                <div id="forms">
+                <div id="form2">
                     <p id="first">2016</p>
                     <p id="dots">........................</p>
                     <p id="last">год запуска франчайзинга</p>
                 </div>
                 
-                <div id="forms">
+                <div id="form3">
                     <p id="first">1</p>
                     <p id="dots">........................</p>
                     <p id="last">франшизных предприятий</p>
                 </div>
 
-                <div id="forms">
+                <div id="form4">
                     <p id="first">5</p>
                     <p id="dots">........................</p>
                     <p id="last">собственных предприятий</p>
                 </div>
-                
-
             </div>
-        </header>
-        <main>
-                <div class="target">
-                    
-                </div>
-                <div class="conditions"></div>
-                <div class="request"></div>
         </main>
-        <footer></footer>
+            <!-- Что мы предлагаем -->
+        <main class="main2">
+            <div class="target">
+                <p id="toptarget">что мы предлагаем</p>
+                <div id="targetcontent">
+                    <p id="numcircl">1</p><p id="targets">Передача оптимизированных бизнес-процессов</p>
+                    <p id="numcircl">2</p><p id="targets">Приезд на открытие стартап-команды франчайзи</p>
+                    <p id="numcircl">3</p><p id="targets">Программа обучения и тренинги для персонала</p>
+                    <p id="numcircl">4</p><p id="targets">Оперативная поддержка и консультации</p>
+                    <p id="numcircl">5</p><p id="targets">Топ-менеджмент на базе флагманского ресторана</p>
+                    <p id="numcircl">6</p><p id="targets">Маркетинговая концепция с учётом вашей геолокации</p>
+                    <p id="numcircl">7</p><p id="targets">Внедрение в общую SMM-компанию</p>
+                    <p id="numcircl">8</p><p id="targets">Актуальные меню, карты бара и макеты полиграфических материалов</p>
+                    <p id="numcircl">9</p><p id="targets">Обновление фоновой музыки и видеоряда</p>
+                    </div>
+                    <!-- ссылки -->
+                <div class="links">
+                    <p id="links">посмотреть полное описание на beboss.ru</p><span id="arrow"></span>
+                    <p id="links">скачать презентацию (pdf, 1.2 МБ)</p><span id="arrow"></span>
+                </div>
+            </div>
+        </main>
+
+            <!-- Условия -->
+        <main class="main3">
+            <div class="conditions">
+                <div class="cname">
+                    <p id="cname">условия франшизы</p>
+                </div>
+                <div class="cbottom">
+                    <div  class="cformnt" id="cforms">
+                        <div id="cfirst">
+                            <h1 id="firsth1">500</h1>
+                            <h1 id="lasth1">тыс. руб.</h1>
+                        </div>
+                        <p id="cdots">...................................</p>
+                        <p id="clast">вступительный взнос</p>
+                    </div>
+    
+                    <div class="cformnt" id="cforms">
+                        <div id="cfirst">
+                            <h1 id="firsth1">6</h1>
+                            <h1 id="lasth1">%</h1>
+                        </div>
+                        <p id="cdots">...................................</p>
+                        <p id="clast">роялти в 1-ый год (первые 2 месяца с открытия, мораторий на выплату роялти)</p>
+                    </div>
+                    
+                    <div id="cforms">
+                        <div id="cfirst">
+                            <h1 id="firsth1">8</h1>
+                            <h1 id="lasth1">%</h1>
+                        </div>
+                        <p id="cdots">...................................</p>
+                        <p id="clast">роялти со 2-го года</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Открыть свой ресторан -->
+        <main class="main4">
+            <div class="request">
+                <div class="rname">
+                    <p id="rname">открыть свой ресторан</p>
+                </div>
+                <div class="reqform">
+                    <div class="texinput">
+                        <div id="kolonka1">
+                            <input type="text" class="inputText" name="username" id="username" placeholder="Ф. И. О.">
+                            <input type="email" class="inputText" name="email" id="email" placeholder="Электронная почта">
+                        </div>  
+
+                        <div id="kolonka2">
+                            <input type="tel" class="inputText" name="tel" id="tel" placeholder="Контактный телефон">
+                            <input type="city" class="inputText" name="city" id="city" placeholder="Город открытия">
+                        </div>
+
+                        <input type="text" class="inputText" name="message" id="message" placeholder="Сообщение">
+                    
+                        <div class="reqbottom">
+                            <div class="recap">
+                                <div class="g-recaptcha" data-sitekey="6LfPnGEUAAAAAI_7c9o9MpXID4aNvsu4tEsP6UW0"></div>
+                            </div>
+                            <div class="send">
+                                <input id="send" type="button" value="Отправить заявку">
+                                <h1 id="rules">Нажимая кнопку “Отправить заявку”, вы даёте согласие на обработку своих персональных данных</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Подвал -->
+        <footer>
+            <div class="contacts"></div>
+            <div class="menubottom"></div>
+            <div class="soc"></div>
+            <div class="policy"></div>
+        </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
