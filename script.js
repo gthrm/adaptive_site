@@ -55,7 +55,7 @@ send.onclick = function send() {
         let captcha = grecaptcha.getResponse();
         if (captcha.length == "") {
             alert('Пройдите капчу!');
-            
+            return false;
         } else {
             console.log(username.id + ": " + username.value);
             console.log(email.id + ": " + email.value);
@@ -77,6 +77,7 @@ send.onclick = function send() {
                 message.value = "";
                 message.setAttribute("style", "");
             }, 3000);
+            return false;
         };
 
         
