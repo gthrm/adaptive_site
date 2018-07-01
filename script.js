@@ -49,6 +49,8 @@ send.onclick = function send() {
 
     if (username.value === "" || email.value === "" || tel.value === "" || city.value === "" || message.value === "") {  
         alert('Заполните все поля!');
+        return false;
+
     } else {
         let captcha = grecaptcha.getResponse();
         if (captcha.length == "") {
