@@ -85,10 +85,16 @@ body {
     /* Белые */
 
     #nametop, #cname {
-        height: 65px;
-        line-height: 75px;
+        /* height: 65px;
+        line-height: 75px; */
+        padding-top: 20px;
+        padding-bottom: 15px;
         text-align: center;
         background-color: #ffffff;
+    }
+
+    .nt1 {
+        display: inline-table;
     }
 
     #namesite {
@@ -545,7 +551,10 @@ body {
         display: initial;
     }
 
-
+    .nametop {
+        max-width: 320px;
+    }
+    
     #nametop {
         background-color: #ffffff;
         display: initial;
