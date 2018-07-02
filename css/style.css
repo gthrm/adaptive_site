@@ -134,15 +134,15 @@ body {
 
     .main1 {
         height: 163px;
-        /* background-color: red; */
         padding-top: 76px;
         display: flex;
         justify-content: flex-start;
-        width: 102%;
+        width: 95%;
     }
 
     #first{
         color: #bb172b;
+        border-bottom: 3px dotted rgba(0, 0, 0, .4);
     }
 
     .mtop {
@@ -152,10 +152,12 @@ body {
     #form1, #form2, #form3  {
         float: left;
         margin-right: 3.4%;
+        width: 217px;
     }
 
     #form4 {
         float: left;
+        width: 217px;
     }
 
     #dots {
@@ -238,7 +240,7 @@ body {
         /* display: flex;
         justify-content: flex-start; */
         padding-top: 180px;
-        width: 102%;
+        width: 100%;
     }
 
     #cforms {
@@ -509,9 +511,16 @@ body {
 
     /* Для белых блоков */
 
-    #nametop{
+    #nametop {
         letter-spacing: 3.4px;
     }
+
+    /* Для черных блоков */
+
+    #toptargets {
+        letter-spacing: 5px;
+    }
+
     header {
         padding: 0px;
         width: 100%;
@@ -588,6 +597,79 @@ body {
     }
 
 
+    .main1 {
+        height: 253px;
+        padding-top: 30px;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #first{
+        color: #bb172b;
+        border-bottom: 2px dotted rgba(0, 0, 0, .4);
+        padding-bottom: 4px;
+    }
+
+    .mtop {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    #form1, #form2, #form3  {
+        float: left;
+        margin-right: 5%;
+        width: 45%;
+    }
+
+    #form3 {
+        margin-top: 31px;
+    }
+
+    #form4 {
+        float: left;
+        width: 45%;
+        margin-top: 31px;
+    }
+
+    #dots {
+        color: #b2b2b2;
+        font-size: 23px;
+        line-height: 0;
+        letter-spacing: 1.9px;
+    }
+
+    #last {
+        margin-top: 11px;
+        line-height: 19px;
+    }
+
+    .main2 {
+        height: 980px;
+        background-image: url(../img/320.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-left: 10px;
+        padding-top: 50px;
+    }
+
+    #toptargets {
+        background-color: #000000;
+        display: initial;
+        padding-left: 14px;
+        padding-right: 9px;
+    }
+    
+    .tt1 {
+        padding-top: 17px;
+        padding-bottom: 13px;
+    }
+    
+    .tt2 {
+        padding-bottom: 11px;
+        line-height: 180%;
+        padding-top: 16px;
+    }
 }
 
 @font-face {
