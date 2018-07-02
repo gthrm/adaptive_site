@@ -86,23 +86,32 @@ a#menu:hover{
     }
 }
 @media (min-width:320px) and (max-width:1023px){ 
+   .menu {
+    width: 100%;
+    display: -webkit-box;
+   }
+   
+   
     .burger {
         width: 45px;
         height: 45px;
     }
 
     .burgerline {
-        margin: auto;
         width: 24px;
         height: 2px;
-        margin-bottom: 5px;
+        
         background-color: #fff;
     }
 
-    .first{
-        margin-top: 15px;
+    .first, .second{
+        margin-bottom: 5px;
     }
     
+    .main-menu{
+        width: 100%;
+    }
+
     a#menu{
         display: block;
         width: 100%;

@@ -96,16 +96,31 @@ body {
         width: 284px;
     }
 
-    #nametop{
-        position: absolute;
-        top: 435px;
+    #nametops{
+        margin-bottom: 20px;
         width: 591px;
+        display: flex;
+    }
+
+    .nt1 {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .nt2 {
+        padding-right: 20px;
+    }
+
+    /* изменение 1 */
+    .texttop { 
+        position: absolute;
+        margin-top: 405px;
     }
 
     #texttop {
-        position: absolute;
-        top: 520px;
-        width: 80%;
+        /* position: absolute;
+        top: 520px; */ /* изменение 2 */
+        width: 81%;
         line-height: 180%;
         color: #ffffff;
 
@@ -330,9 +345,11 @@ body {
 
     .send {
         float: right;
+        max-width: 500px;;
     }
 
     #send {
+        background-color: #ffffff;
         border: 3px solid #bb9975;
         border-radius: 0%;
         float: right;
@@ -422,29 +439,144 @@ body {
         
         color: #4c4c4c;
     }
-}
-@media (min-width:320px) and (max-width:1023px){ 
-    header{
-        padding: 0;
-        height: 780px;
+
+    #kolon1, #kolon2 {
+        display: flex;
+        justify-content: center;
     }
+}
+
+@media (min-width:320px) and (max-width:1023px){ 
+
+    /* Шрифты */
+    /* 16px */
+    body {
+        font-size: 16px;
+    }
+    /* 25px */
+    #nametop, #toptarget, #cname, #rname {
+        font-size: 25px;
+    }
+
+    /* 18px */
+    #texttop, #targets {
+        font-size: 18px;
+    }
+
+    /* 50px */
+    #first, #firsth1 {
+        font-size: 50px;
+    }
+
+    /* Белый шрифт */
+    #namesite, #texttop, #toptarget, #firsth1, #lasth1, #clast, #rname, .cont, #mb {
+        color: #ffffff;
+    }
+    /* Бежевый шрифт */
+    #links, #send {
+        color: #bb9975
+    }
+    /* Серый */
+    #policy {
+        color: #4c4c4c;
+    }
+
+    #rules, #username, .inputText {
+        color: rgba(0, 0, 0, .4);
+    }
+
+    /* Uppercase */
+    #menu, #namesite, #nametop, #toptarget, #links, #cname, #lasth1, #rname, #send {
+        text-transform: uppercase;
+    }
+    
+    /* ExtraBold */
+    #numcircl, #toptarget, #first, #nametop, #namesite, #links, #cname, #firsth1, #lasth1, #rname, #send {
+        font-family: "CirceExtraBold"; 
+    }
+   
+    /* Треккинг */
+    /* Для названия */
+    #namesite {
+        letter-spacing: 3.4px;
+    }
+
+    /* Для белых блоков */
+
+    #nametop{
+        letter-spacing: 3.4px;
+    }
+    header {
+        padding: 0px;
+        width: 100%;
+        height: 765px;
+        background: linear-gradient(0deg, #000000, #505050);
+    }
+
+    .burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 
     #namesite {
         font-size: 16px;
         margin-left: 0;
+        margin-left: 10px;
        
     }
     .namesite {
+        background-color: #000000;
         width: 100%;
-        height: 44px;
         padding: 0;
         margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .texttop {
+        padding: 10px;
+        padding-top: 345px;
+    }
+
+    .menubottom {
+        display: initial;
     }
 
 
+    #nametop {
+        background-color: #ffffff;
+        display: initial;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    
+    .nt1 {
+        padding-top: 15px;
+        padding-bottom: 13px;
+    }
+    
+    .nt2 {
+        padding-bottom: 10px;
+        line-height: 200%;
+    }
 
+    #texttop {
+        width: 98%;
+        margin-top: 15px;
+        line-height: 167%;
+    }
 
+    #mb {
+        margin-top: 30px;
+    }
 
+    #kolon1, #kolon2 {
+        float: left;
+        width: 50%;
+    }
 
 
 }
