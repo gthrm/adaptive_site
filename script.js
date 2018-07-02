@@ -48,13 +48,14 @@ send.onclick = function send() {
     
 
     if (username.value === "" || email.value === "" || tel.value === "" || city.value === "" || message.value === "") {  
-        alert('Заполните все поля!');
+        swal ( "Ой" ,  "Ты не заполнил все поля! :)" ,  "error" );
         return false;
 
     } else {
         let captcha = grecaptcha.getResponse();
         if (captcha.length == "") {
-            alert('Пройдите капчу!');
+            // alert('Пройдите капчу!');
+            swal ( "Ой" ,  "Ты не робот? Пройди капчу! ;)" ,  "error" );
             return false;
         } else {
             console.log(username.id + ": " + username.value);
