@@ -185,7 +185,11 @@ body {
 
     #toptarget {
         
-        width: 503px;
+        width: 483px;
+        margin-bottom: 20px;
+        display: flex;
+        padding-left: 20px;
+        letter-spacing: 7px;
     }
 
     #numcircl {
@@ -451,6 +455,16 @@ body {
     #kolon1, #kolon2 {
         display: flex;
         justify-content: center;
+    
+    }
+
+    .tt1 {
+        display: inline-table;
+       
+    }
+
+    .tt2 {
+        margin-left: 10px;
     }
 }
 
@@ -663,12 +677,13 @@ body {
     .tt1 {
         padding-top: 17px;
         padding-bottom: 13px;
+        z-index: 999;
     }
     
     .tt2 {
         padding-bottom: 11px;
         line-height: 180%;
-        padding-top: 16px;
+        padding-top: 15px;
     }
 }
 
