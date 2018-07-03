@@ -58,6 +58,7 @@ send.onclick = function send() {
             swal ( "Ой" ,  "Ты не робот? Пройди капчу! ;)" ,  "error" );
             return false;
         } else {
+            console.log(captcha);
             console.log(username.id + ": " + username.value);
             console.log(email.id + ": " + email.value);
             console.log(tel.id + ": " + tel.value);
