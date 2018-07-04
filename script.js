@@ -59,11 +59,7 @@ send.onclick = function send() {
             return false;
         } else {
             // отправка запроса
-            httpReq("http://127.0.0.1:8080", "POST", captcha, function(res) {
-                console.log("response:", res);
-            }, function(err) {
-                console.error(err);
-            });
+           
             //
 
             console.log(captcha);
