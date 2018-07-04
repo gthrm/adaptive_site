@@ -58,6 +58,14 @@ send.onclick = function send() {
             swal ( "Ой" ,  "Ты не робот? Пройди капчу! ;)" ,  "error" );
             return false;
         } else {
+            // отправка запроса
+            httpReq("127.0.0.1:8080", "POST", captcha, function(res) {
+                console.log("response:", res);
+            }, function(err) {
+                console.error(err);
+            });
+            //
+
             console.log(captcha);
             console.log(username.id + ": " + username.value);
             console.log(email.id + ": " + email.value);
